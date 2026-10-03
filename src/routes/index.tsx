@@ -241,7 +241,7 @@ function Index() {
       {/* Diagnóstico */}
       <Section className="bg-graphite">
         <Eyebrow>O DIAGNÓSTICO</Eyebrow>
-        <h2 className="mt-6 font-display text-4xl leading-tight md:text-6xl">CUIDADO. VOCÊ SABE O QUE PRECISA FAZER. <span className="block italic text-gold">ENTÃO POR QUE CONTINUA SEM FAZER?</span></h2>
+        <h2 className="mt-6 font-display text-4xl leading-tight md:text-6xl">VOCÊ SABE O QUE PRECISA FAZER. <span className="block italic text-gold">ENTÃO POR QUE CONTINUA SEM FAZER?</span></h2>
         <p className="mt-10 eyebrow">Talvez você:</p>
         <ul className="mt-6 grid gap-x-12 md:grid-cols-2">
           {["Comece e não consiga sustentar;", "Procrastine justamente aquilo que mais importa;", "Tenha medo de tentar novamente e fracassar;", "Saiba que precisa se posicionar, mas continue se escondendo;", "Queira empreender, mas sempre encontre um motivo para adiar;", "Tenha dificuldade de manter disciplina;", "Se cobre muito e, ainda assim, sinta que não sai do lugar;", "Esteja cansada de consumir conteúdo e continuar no mesmo ponto."].map((t) => (
