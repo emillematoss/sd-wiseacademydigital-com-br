@@ -3,6 +3,7 @@ import { useEffect, useState, type ReactNode } from "react";
 import { ArrowRight, Check, ChevronDown, Crown, Lock, Menu, X } from "lucide-react";
 import heroDama from "@/assets/hero-dama.jpg";
 import bonusCover from "@/assets/bonus-cover.jpg";
+import emilleAsset from "@/assets/emille.png.asset.json";
 import { SITE, trackCheckout } from "@/lib/site-config";
 
 export const Route = createFileRoute("/")({
@@ -387,7 +388,7 @@ function Index() {
       <Section id="mentora">
         <div className="grid items-center gap-12 md:grid-cols-[0.9fr_1.1fr]">
           <div className="relative border border-gold/70 p-3">
-            <img src={heroDama} alt="Imagem provisória — foto da Êmille em breve" loading="lazy" width={1600} height={1200} className="aspect-[4/5] w-full object-cover object-[85%_center]" />
+            <img src={emilleAsset.url} alt="Êmille Matos" loading="lazy" width={1122} height={1402} className="aspect-[4/5] w-full object-cover object-top" />
             <span className="absolute bottom-6 left-6 text-[9px] uppercase tracking-[0.2em] text-ivory/50">Imagem provisória</span>
           </div>
           <div>
