@@ -319,10 +319,8 @@ function Index() {
         <div className="mt-12 divide-y divide-border border-y border-border">
           {[
             ["ANÁLISE DE TEMPERAMENTO", "Entenda como o seu temperamento comanda suas decisões, seus medos e seus padrões."],
-            ["5 ENCONTROS INDIVIDUAIS", "Sessões exclusivas, só você e eu, para olhar para os comportamentos que te mantêm parada e construir o seu plano de ação."],
-            ["PROTOCOLO EXPERTUS", "Seu protocolo de tarefas para despertar a consciência e fazer você avançar na prática."],
+            ["5 ENCONTROS AO VIVO", "Sessões exclusivas, só você e eu, para olhar para os comportamentos que te mantêm parada e construir o seu plano de ação."],
             ["MATERIAL PERSONALIZADO", "Conteúdo montado a partir do seu padrão e do seu momento."],
-            ["15 DIAS DE SUPORTE", "Acompanhamento para você não voltar automaticamente ao padrão anterior."],
           ].map(([t, d], i) => (
             <div key={t} className="grid gap-2 py-7 md:grid-cols-[100px_1fr_1.4fr] md:items-center">
               <span className="font-display text-4xl text-gold">0{i + 1}</span>
@@ -339,9 +337,9 @@ function Index() {
         <h2 className="mt-6 font-display text-4xl md:text-6xl">E LEVA <span className="italic text-gold">3 BÔNUS </span> LIBERADOS NA HORA</h2>
         <div className="mt-12 grid gap-10 md:grid-cols-3">
           {[
-            ["IMERSÃO COM A ÊMILLE", "A minha história, os meus erros, a minha virada e o passo a passo de como eu saí do ciclo de começar e parar. Você entra na minha jornada e enxerga que o caminho existe."],
-            ["ANÁLISE DE TEMPERAMENTO", "O guia para entender o seu temperamento e como ele influencia a sua disciplina, as suas decisões e a sua relação com o dinheiro."],
-            ["PROTOCOLO DE TAREFAS EXPERTUS", "Um protocolo prático de tarefas que desperta a consciência e te faz avançar toda semana. Você deixa de só entender o problema e passa a agir sobre ele."],
+            ["O COMPORTAMENTO FINANCEIRO DE CADA TEMPERAMENTO", "Entenda como o seu temperamento influencia a sua relação com o dinheiro."],
+            ["DESTRAVE SUA PRODUTIVIDADE", "Para sair do ciclo de começar e parar e colocar a sua rotina em movimento."],
+            ["A JORNADA DA MULHER PRÓSPERA", "Um caminho para construir, com consciência, a vida próspera que você decidiu viver."],
           ].map(([t, d], i) => (
             <div key={t}>
               <div className="relative aspect-[3/4] overflow-hidden shadow-[0_30px_60px_-20px_var(--wine)]">
@@ -361,7 +359,7 @@ function Index() {
           ))}
         </div>
         <p className="mt-14 border border-gold/40 p-5 text-center text-sm text-gold-soft">
-          <strong>EXTRAS DE LANÇAMENTO:</strong> Ebook Mente Próspera + Gravação do Workshop Destravando a Mente Próspera
+          <strong>EXTRAS DE LANÇAMENTO (liberados após 7 dias):</strong> Protocolo Expertus + Ebook Destravando a Mente Próspera
         </p>
       </Section>
 
@@ -374,7 +372,7 @@ function Index() {
           <p className="text-sm text-muted-foreground">à vista</p>
           <p className="mt-6 text-xs tracking-[0.15em] text-gold">SEU ACESSO A ESTA CONDIÇÃO TERMINA EM: <span className="tabular-nums">{time}</span></p>
           <ul className="mx-auto mt-8 grid max-w-md gap-3 text-left text-sm sm:grid-cols-2">
-            {["Análise de Temperamento", "5 encontros individuais", "Acesso ao EXPERTUS", "Protocolo de tarefas", "Material personalizado", "15 dias de suporte", "3 bônus", "Extras de lançamento"].map((t) => (
+            {["Análise de Temperamento", "5 encontros ao vivo", "Material personalizado", "3 bônus", "Protocolo Expertus (após 7 dias)", "Ebook Destravando a Mente Próspera (após 7 dias)"].map((t) => (
               <li key={t} className="flex gap-2"><Check className="h-4 w-4 text-gold" />{t}</li>
             ))}
           </ul>
