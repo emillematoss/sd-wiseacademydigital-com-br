@@ -185,7 +185,7 @@ function Index() {
               <div className="mt-5 h-px w-64 bg-gold/50 md:w-96" />
               <p className="mt-3 text-[10px] font-bold tracking-[0.2em] text-gold-soft">MENTORIA INDIVIDUAL COM ÊMILLE MATOS</p>
             </div>
-            <span className="absolute bottom-6 right-6 text-[9px] uppercase tracking-[0.2em] text-ivory/40">Imagem provisória</span>
+            <span className="absolute bottom-6 right-6 text-[9px] uppercase tracking-[0.2em] text-ivory/40">I</span>
           </div>
 
           {/* Texto */}
