@@ -288,9 +288,9 @@ function Index() {
         <h2 className="mt-6 font-display text-5xl md:text-7xl">COMO SABER SE A DONA DO JOGO <span className="italic text-gold">É PARA VOCÊ?</span></h2>
         <div className="mt-12 grid gap-8 md:grid-cols-2">
           <div className="border border-gold/50 p-8">
-            <h3 className="text-3xl text-gold">É PARA VOCÊ</h3>
+            <h3 className="text-3xl text-gold">É PARA VOCÊ SE:</h3>
             <ul className="mt-6 space-y-4 text-sm leading-relaxed text-ivory/85">
-              {["Você que está cansada de saber que pode mais, mas não consegue transformar isso em movimento.", "Você que sente que está andando em círculos.", "Você que já tentou mudar várias vezes e acabou voltando para os mesmos comportamentos.", "Você que quer empreender, aumentar sua renda ou construir uma vida diferente, mas percebe que existe algo dentro de você te segurando.", "Você que quer parar de depender da motivação e desenvolver uma relação mais consciente com disciplina e ação.", "Você que quer assumir responsabilidade pelas suas escolhas sem transformar isso em culpa."].map((t) => (
+              {["Está cansada de saber que pode mais, mas não consegue transformar isso em movimento.", "Sente que está andando em círculos.", "Já tentou mudar várias vezes e acabou voltando para os mesmos comportamentos.", "Quer empreender, aumentar sua renda ou construir uma vida diferente, mas percebe que existe algo dentro de você te segurando.", "Quer parar de depender da motivação e desenvolver uma relação mais consciente com disciplina e ação.", "Quer assumir responsabilidade pelas suas escolhas sem transformar isso em culpa."].map((t) => (
                 <li key={t} className="flex gap-3"><Check className="mt-0.5 h-4 w-4 shrink-0 text-gold" />{t}</li>
               ))}
             </ul>
