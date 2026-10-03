@@ -8,3 +8,4 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+- Site config (checkout, WhatsApp, Pixel) lives in src/lib/site-config.ts; empty values show a notice instead of fake links.
