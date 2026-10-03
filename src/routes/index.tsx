@@ -321,6 +321,7 @@ function Index() {
             ["ANÁLISE DE TEMPERAMENTO", "Entenda como o seu temperamento comanda suas decisões, seus medos e seus padrões."],
             ["5 ENCONTROS AO VIVO", "Sessões exclusivas, só você e eu, para olhar para os comportamentos que te mantêm parada e construir o seu plano de ação."],
             ["MATERIAL PERSONALIZADO", "Conteúdo montado a partir do seu padrão e do seu momento."],
+            ["15 DIAS DE SUPORTE", "Acompanhamento para você não voltar automaticamente ao padrão anterior."],
           ].map(([t, d], i) => (
             <div key={t} className="grid gap-2 py-7 md:grid-cols-[100px_1fr_1.4fr] md:items-center">
               <span className="font-display text-4xl text-gold">0{i + 1}</span>
@@ -335,26 +336,28 @@ function Index() {
       <Section>
         <Eyebrow>BÔNUS </Eyebrow>
         <h2 className="mt-6 font-display text-4xl md:text-6xl">E LEVA <span className="italic text-gold">3 BÔNUS </span> LIBERADOS NA HORA</h2>
-        <div className="mt-12 grid gap-10 md:grid-cols-3">
+        <div className="mt-12 grid gap-5 md:grid-cols-3">
           {[
             ["O COMPORTAMENTO FINANCEIRO DE CADA TEMPERAMENTO", "Entenda como o seu temperamento influencia a sua relação com o dinheiro."],
             ["DESTRAVE SUA PRODUTIVIDADE", "Para sair do ciclo de começar e parar e colocar a sua rotina em movimento."],
             ["A JORNADA DA MULHER PRÓSPERA", "Um caminho para construir, com consciência, a vida próspera que você decidiu viver."],
           ].map(([t, d], i) => (
-            <div key={t}>
-              <div className="relative aspect-[3/4] overflow-hidden shadow-[0_30px_60px_-20px_var(--wine)]">
-                <img src={bonusCover} alt={`Capa do bônus ${t}`} loading="lazy" width={768} height={1024} className="h-full w-full object-cover" />
-                <div className="absolute inset-x-0 top-[12%] text-center">
-                  <p className="eyebrow">BÔNUS</p>
-                </div>
-                <div className="absolute inset-x-6 bottom-[14%] text-center">
-                  <p className="font-display text-2xl leading-tight text-ivory">{t}</p>
-                  <p className="mt-2 text-[9px] tracking-[0.2em] text-gold">DONA DO JOGO · 0{i + 1}</p>
+            <div key={t} className="border border-gold/20 bg-card/60 p-7">
+              <div className="relative aspect-[6/5] overflow-hidden border border-gold/60 bg-background p-6">
+                <svg aria-hidden viewBox="0 0 200 200" className="pointer-events-none absolute -right-6 top-0 h-full text-gold/15" fill="none" stroke="currentColor" strokeWidth="1">
+                  <path d="M40 40 L110 110 L180 40" /><path d="M90 0 L160 70 L230 0" /><path d="M40 120 L110 190 L180 120" />
+                </svg>
+                <div className="relative flex h-full flex-col">
+                  <span className="self-start bg-wine px-3 py-1.5 text-[9px] font-bold tracking-[0.15em] text-ivory">BÔNUS</span>
+                  <div className="mt-auto">
+                    <Crown className="h-5 w-5 text-gold" />
+                    <p className="mt-3 font-display text-2xl leading-tight text-gold-soft md:text-[1.7rem]">{t}</p>
+                  </div>
+                  <p className="mt-6 text-[9px] tracking-[0.25em] text-ivory/60">DONA DO JOGO · 0{i + 1}</p>
                 </div>
               </div>
-              <p className="mt-6 eyebrow">BÔNUS {i + 1} —</p>
-              <h3 className="mt-2 text-2xl">{t}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{d}</p>
+              <p className="mt-7 text-[10px] font-bold tracking-[0.2em] text-gold">BÔNUS {i + 1} — {t}</p>
+              <p className="mt-4 text-sm leading-[2] text-muted-foreground">{d}</p>
             </div>
           ))}
         </div>
@@ -423,7 +426,7 @@ function Index() {
           {[
             ["Preciso ter um negócio para participar?", "Não. A mentoria é para quem quer empreender, aumentar a renda ou construir uma vida diferente, esteja começando, recomeçando ou travada no primeiro passo."],
             ["Como funcionam os 5 encontros individuais?", "São sessões exclusivas comigo. Após a confirmação do pagamento, você recebe as instruções para agendar."],
-            ["Não tenho muito tempo. Funciona para mim?", "Sim. O processo foi pensado para mulheres com a rotina cheia, e o protocolo Expertus te guia no que fazer."],
+            ["Não tenho muito tempo. Funciona para mim?", "Sim. O processo foi pensado para mulheres com a rotina cheia."],
             ["Quando recebo os bônus?", "Imediatamente após a confirmação do pagamento, por e-mail."],
             ["Isso é terapia?", "Não. É mentoria de comportamento e desbloqueio emocional com foco em ação. Não substitui acompanhamento psicológico."],
             ["E se eu não gostar?", "Você tem 7 dias para solicitar o cancelamento, conforme as condições da oferta."],
