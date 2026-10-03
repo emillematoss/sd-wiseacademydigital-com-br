@@ -171,8 +171,8 @@ function Index() {
               height={1200}
               className="absolute inset-0 h-full w-full object-cover object-[80%_center] lg:-right-20 lg:w-[calc(100%+5rem)]"
               style={{
-                maskImage: "radial-gradient(ellipse 70% 65% at 65% 50%, #000 35%, transparent 78%)",
-                WebkitMaskImage: "radial-gradient(ellipse 70% 65% at 65% 50%, #000 35%, transparent 78%)",
+                maskImage: "radial-gradient(ellipse 62% 65% at 55% 50%, #000 35%, transparent 78%)",
+                WebkitMaskImage: "radial-gradient(ellipse 62% 65% at 55% 50%, #000 35%, transparent 78%)",
               }}
             />
             <div className="relative flex flex-col items-start px-6 pt-10 lg:px-10 lg:pt-24">
