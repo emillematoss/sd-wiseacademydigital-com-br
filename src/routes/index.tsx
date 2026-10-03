@@ -113,7 +113,7 @@ function Index() {
   useEffect(() => {
     if (!SITE.metaPixelId) return;
     const w = window as unknown as Record<string, unknown>;
-    if (w.fbq) return;
+    if (w["fbq"]) return;
     /* eslint-disable */
     (function (f: any, b: any, e: any, v: any) {
       const n: any = (f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); });
@@ -121,8 +121,8 @@ function Index() {
       const t = b.createElement(e); t.async = true; t.src = v;
       b.head.appendChild(t);
     })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
-    (w.fbq as any)("init", SITE.metaPixelId);
-    (w.fbq as any)("track", "PageView");
+    (w["fbq"] as any)("init", SITE.metaPixelId);
+    (w["fbq"] as any)("track", "PageView");
   }, []);
 
   return (
