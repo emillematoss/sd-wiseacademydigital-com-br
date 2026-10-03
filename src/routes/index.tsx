@@ -175,8 +175,6 @@ function Index() {
                 WebkitMaskImage: "radial-gradient(ellipse 70% 65% at 65% 50%, #000 35%, transparent 78%)",
               }}
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-transparent" />
-            <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-background to-transparent" />
             <div className="relative flex flex-col items-start px-6 pt-10 lg:px-10 lg:pt-24">
               <Crown className="mb-2 h-9 w-9 text-gold" strokeWidth={1.2} />
               <h1 className="animate-rise font-display font-medium leading-[0.85]">
