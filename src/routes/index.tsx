@@ -285,7 +285,7 @@ function Index() {
       {/* Para você */}
       <Section>
         <Eyebrow>ESCOLHA COM CONSCIÊNCIA</Eyebrow>
-        <h2 className="mt-6 font-display text-5xl md:text-7xl">A DONA DO JOGO <span className="italic text-gold">É PARA VOCÊ?</span></h2>
+        <h2 className="mt-6 font-display text-5xl md:text-7xl">COMO SABER SE A DONA DO JOGO <span className="italic text-gold">É PARA VOCÊ?</span></h2>
         <div className="mt-12 grid gap-8 md:grid-cols-2">
           <div className="border border-gold/50 p-8">
             <h3 className="text-3xl text-gold">É PARA VOCÊ</h3>
