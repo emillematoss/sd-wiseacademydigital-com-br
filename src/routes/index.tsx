@@ -335,8 +335,8 @@ function Index() {
 
       {/* Bônus */}
       <Section>
-        <Eyebrow>BÔNUS EM EBOOK</Eyebrow>
-        <h2 className="mt-6 font-display text-4xl md:text-6xl">E LEVA <span className="italic text-gold">3 BÔNUS EM EBOOK,</span> LIBERADOS NA HORA</h2>
+        <Eyebrow>BÔNUS </Eyebrow>
+        <h2 className="mt-6 font-display text-4xl md:text-6xl">E LEVA <span className="italic text-gold">3 BÔNUS </span> LIBERADOS NA HORA</h2>
         <div className="mt-12 grid gap-10 md:grid-cols-3">
           {[
             ["IMERSÃO COM A ÊMILLE", "A minha história, os meus erros, a minha virada e o passo a passo de como eu saí do ciclo de começar e parar. Você entra na minha jornada e enxerga que o caminho existe."],
@@ -374,7 +374,7 @@ function Index() {
           <p className="text-sm text-muted-foreground">à vista</p>
           <p className="mt-6 text-xs tracking-[0.15em] text-gold">SEU ACESSO A ESTA CONDIÇÃO TERMINA EM: <span className="tabular-nums">{time}</span></p>
           <ul className="mx-auto mt-8 grid max-w-md gap-3 text-left text-sm sm:grid-cols-2">
-            {["Análise de Temperamento", "5 encontros individuais", "Acesso ao EXPERTUS", "Protocolo de tarefas", "Material personalizado", "15 dias de suporte", "3 bônus em ebook", "Extras de lançamento"].map((t) => (
+            {["Análise de Temperamento", "5 encontros individuais", "Acesso ao EXPERTUS", "Protocolo de tarefas", "Material personalizado", "15 dias de suporte", "3 bônus", "Extras de lançamento"].map((t) => (
               <li key={t} className="flex gap-2"><Check className="h-4 w-4 text-gold" />{t}</li>
             ))}
           </ul>
@@ -389,7 +389,7 @@ function Index() {
         <div className="grid items-center gap-12 md:grid-cols-[0.9fr_1.1fr]">
           <div className="relative border border-gold/70 p-3">
             <img src={emilleAsset.url} alt="Êmille Matos" loading="lazy" width={1122} height={1402} className="aspect-[4/5] w-full object-cover object-top" />
-            <span className="absolute bottom-6 left-6 text-[9px] uppercase tracking-[0.2em] text-ivory/50">Imagem provisória</span>
+            <span className="absolute bottom-6 left-6 text-[9px] uppercase tracking-[0.2em] text-ivory/50">{"\n"}</span>
           </div>
           <div>
             <Eyebrow>QUEM ESTÁ POR TRÁS</Eyebrow>
