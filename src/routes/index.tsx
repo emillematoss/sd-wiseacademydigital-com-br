@@ -255,7 +255,7 @@ function Index() {
       <Section id="metodo">
         <Eyebrow>O MÉTODO</Eyebrow>
         <h2 className="mt-6 font-display text-4xl leading-tight md:text-6xl">UM PROTOCOLO PARA QUEM DECIDIU <span className="italic text-gold">PARAR DE REPETIR</span> OS MESMOS PADRÕES</h2>
-        <p className="mt-8 max-w-3xl leading-[1.8] text-ivory/80">Um protocolo desenvolvido para aquela que deseja parar de repetir os padrões que a mantêm travada, transformando-a em uma mulher capaz de sustentar a vida que decidiu construir. Você se torna a dona do seu futuro através de um método.</p>
+        <p className="mt-8 max-w-3xl leading-[1.8] text-ivory/80">Um protocolo desenvolvido para aquela mulher que deseja parar de repetir os padrões que a mantêm travada, transformando-a em uma mulher capaz de sustentar a vida que decidiu construir. Você se torna a dona do seu futuro através de um método.</p>
         <h3 className="mt-12 text-3xl text-gold">VOCÊ VAI APLICAR UM MÉTODO VALIDADO!</h3>
         <p className="mt-4 max-w-3xl leading-[1.8] text-ivory/80">Você não vai sair daqui apenas com insights. Vai executar um protocolo de tarefas para tirar da cabeça o que foi trabalhado nos encontros e levar para a sua rotina.</p>
         <div className="mt-12 grid grid-cols-2 gap-6 md:grid-cols-4">
