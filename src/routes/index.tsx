@@ -130,7 +130,7 @@ function Index() {
     <div className="pb-24 md:pb-0">
       {/* Oferta */}
       <div className="bg-wine px-4 py-2.5 text-center text-[11px] font-bold tracking-[0.14em] text-gold-soft">
-        OFERTA DE LANÇAMENTO: R$197 | VAGAS LIMITADAS<span className="ml-1 tabular-nums">{time}</span>
+        OFERTA DE LANÇAMENTO | VAGAS LIMITADAS
       </div>
 
       {/* Nav */}
