@@ -2,7 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState, type ReactNode } from "react";
 import { ArrowRight, Check, ChevronDown, Crown, Lock, Menu, X } from "lucide-react";
 import heroDama from "@/assets/hero-dama.jpg";
-import bonusCover from "@/assets/bonus-cover.jpg";
 import emilleAsset from "@/assets/emille.png.asset.json";
 import { SITE, trackCheckout } from "@/lib/site-config";
 
@@ -375,7 +374,7 @@ function Index() {
           <p className="text-sm text-muted-foreground">à vista</p>
           <p className="mt-6 text-xs tracking-[0.15em] text-gold">SEU ACESSO A ESTA CONDIÇÃO TERMINA EM: <span className="tabular-nums">{time}</span></p>
           <ul className="mx-auto mt-8 grid max-w-md gap-3 text-left text-sm sm:grid-cols-2">
-            {["Análise de Temperamento", "5 encontros ao vivo", "Material personalizado", "3 bônus", "Protocolo Expertus (após 7 dias)", "Ebook Destravando a Mente Próspera (após 7 dias)"].map((t) => (
+            {["Análise de Temperamento", "5 encontros ao vivo", "Material personalizado", "15 dias de suporte", "3 bônus", "Protocolo Expertus (após 7 dias)", "Ebook Destravando a Mente Próspera (após 7 dias)"].map((t) => (
               <li key={t} className="flex gap-2"><Check className="h-4 w-4 text-gold" />{t}</li>
             ))}
           </ul>
