@@ -144,7 +144,7 @@ function Index() {
               <a key={h} href={h} className="text-[11px] uppercase tracking-[0.18em] text-ivory/80 hover:text-gold">{l}</a>
             ))}
           </nav>
-          <BuyButton className="hidden !px-5 !py-3 !text-xs lg:inline-flex">QUERO SER DONA DO JOGO</BuyButton>
+          <div className="hidden lg:block"><BuyButton className="!px-5 !py-3 !text-xs">QUERO SER DONA DO JOGO</BuyButton></div>
           <button aria-label="Menu" className="lg:hidden" onClick={() => setOpen(!open)}>
             {open ? <X /> : <Menu />}
           </button>
@@ -169,10 +169,10 @@ function Index() {
               alt="Dama de xadrez dourada (imagem provisória)"
               width={1600}
               height={1200}
-              className="absolute inset-0 h-full w-full object-cover object-[80%_center]"
+              className="absolute inset-0 h-full w-full object-cover object-[80%_center] lg:-right-20 lg:w-[calc(100%+5rem)]"
               style={{
-                maskImage: "radial-gradient(ellipse 75% 70% at 60% 55%, #000 45%, transparent 100%)",
-                WebkitMaskImage: "radial-gradient(ellipse 75% 70% at 60% 55%, #000 45%, transparent 100%)",
+                maskImage: "radial-gradient(ellipse 70% 65% at 65% 50%, #000 35%, transparent 78%)",
+                WebkitMaskImage: "radial-gradient(ellipse 70% 65% at 65% 50%, #000 35%, transparent 78%)",
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-transparent" />
