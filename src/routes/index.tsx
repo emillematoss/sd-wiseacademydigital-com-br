@@ -370,7 +370,8 @@ function Index() {
         <div className="mx-auto max-w-2xl border border-gold/60 bg-background/70 p-8 text-center md:p-14">
           <p className="eyebrow">OFERTA DE LANÇAMENTO</p>
           <h2 className="mt-4 font-display text-4xl md:text-5xl">ENTRE PARA A MENTORIA <span className="block italic text-gold">A DONA DO JOGO</span></h2>
-          <p className="mt-8 font-display text-7xl text-ivory md:text-8xl">R$ 197</p>
+          <p className="mt-8 text-lg text-muted-foreground">De <s className="text-muted-foreground/80">R$ 497</s> por</p>
+          <p className="mt-2 font-display text-7xl text-ivory md:text-8xl">R$ 197</p>
           <p className="text-sm text-muted-foreground">à vista</p>
           <p className="mt-6 text-xs tracking-[0.15em] text-gold">SEU ACESSO A ESTA CONDIÇÃO TERMINA EM: <span className="tabular-nums">{time}</span></p>
           <ul className="mx-auto mt-8 grid max-w-md gap-3 text-left text-sm sm:grid-cols-2">
