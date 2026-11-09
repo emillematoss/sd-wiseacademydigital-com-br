@@ -339,7 +339,7 @@ function Index() {
           {[
             ["O COMPORTAMENTO FINANCEIRO DE CADA TEMPERAMENTO", "Entenda como o seu temperamento influencia a sua relação com o dinheiro."],
             ["DESTRAVE SUA PRODUTIVIDADE", "Para sair do ciclo de começar e parar e colocar a sua rotina em movimento."],
-            ["A JORNADA DA MULHER PRÓSPERA", "Um caminho para construir, com consciência, a vida próspera que você decidiu viver."],
+            ["A JORNADA DA MULHER PROTAGONISTA", "Um caminho para construir, com consciência, a vida que você decidiu viver."],
           ].map(([t, d], i) => (
             <div key={t} className="border border-gold/20 bg-card/60 p-7">
               <div className="relative aspect-[6/5] overflow-hidden border border-gold/60 bg-background p-6">
@@ -361,7 +361,7 @@ function Index() {
           ))}
         </div>
         <p className="mt-14 border border-gold/40 p-5 text-center text-sm text-gold-soft">
-          <strong>EXTRAS DE LANÇAMENTO (liberados após 7 dias):</strong> Protocolo Expertus + Ebook Destravando a Mente Próspera
+          <strong>EXTRAS DE LANÇAMENTO:</strong> Protocolo Expertus + Ebook Destravando a Mente Próspera
         </p>
       </Section>
 
@@ -375,7 +375,7 @@ function Index() {
           <p className="text-sm text-muted-foreground">à vista</p>
           <p className="mt-6 text-xs tracking-[0.15em] text-gold">SEU ACESSO A ESTA CONDIÇÃO TERMINA EM: <span className="tabular-nums">{time}</span></p>
           <ul className="mx-auto mt-8 grid max-w-md gap-3 text-left text-sm sm:grid-cols-2">
-            {["Análise de Temperamento", "5 encontros ao vivo", "Material personalizado", "15 dias de suporte", "3 bônus", "Protocolo Expertus (após 7 dias)", "Ebook Destravando a Mente Próspera (após 7 dias)"].map((t) => (
+            {["Análise de Temperamento", "5 encontros ao vivo", "Material personalizado", "15 dias de suporte", "3 bônus", "Protocolo Expertus", "Ebook Destravando a Mente Próspera"].map((t) => (
               <li key={t} className="flex gap-2"><Check className="h-4 w-4 text-gold" />{t}</li>
             ))}
           </ul>
