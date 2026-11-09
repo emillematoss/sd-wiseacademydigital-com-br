@@ -375,10 +375,11 @@ function Index() {
           <p className="text-sm text-muted-foreground">à vista</p>
           <p className="mt-6 text-xs tracking-[0.15em] text-gold">SEU ACESSO A ESTA CONDIÇÃO TERMINA EM: <span className="tabular-nums">{time}</span></p>
           <ul className="mx-auto mt-8 grid max-w-md gap-3 text-left text-sm sm:grid-cols-2">
-            {["Análise de Temperamento", "5 encontros ao vivo", "Material personalizado", "15 dias de suporte", "3 bônus", "Protocolo Expertus", "Ebook Destravando a Mente Próspera"].map((t) => (
+            {["Análise de Temperamento", "5 encontros ao vivo", "Material personalizado", "15 dias de suporte", "3 bônus"].map((t) => (
               <li key={t} className="flex gap-2"><Check className="h-4 w-4 text-gold" />{t}</li>
             ))}
           </ul>
+          <p className="mt-4 text-xs italic tracking-wide text-gold-soft">+ Extras exclusivos da oferta de lançamento</p>
           <p className="mt-8 text-sm italic text-ivory/75">Você não está comprando mais conteúdo. Está escolhendo olhar para aquilo que vem te impedindo de avançar.</p>
           <BuyButton className="mt-8 w-full">SIM, QUERO TER ACESSO AGORA</BuyButton>
           <div className="flex justify-center"><Trust /></div>
