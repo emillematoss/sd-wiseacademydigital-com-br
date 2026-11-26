@@ -60,26 +60,6 @@ function Trust() {
   );
 }
 
-function useCountdown() {
-  const [left, setLeft] = useState<number | null>(null);
-  useEffect(() => {
-    const KEY = "ddj_deadline";
-    let d = Number(localStorage.getItem(KEY));
-    if (!d || d < Date.now()) {
-      d = Date.now() + 24 * 3600 * 1000;
-      localStorage.setItem(KEY, String(d));
-    }
-    const tick = () => setLeft(Math.max(0, d - Date.now()));
-    tick();
-    const i = setInterval(tick, 1000);
-    return () => clearInterval(i);
-  }, []);
-  if (left === null) return "23:59:59";
-  const s = Math.floor(left / 1000);
-  const p = (n: number) => String(n).padStart(2, "0");
-  return `${p(Math.floor(s / 3600))}:${p(Math.floor((s % 3600) / 60))}:${p(s % 60)}`;
-}
-
 function Eyebrow({ children }: { children: ReactNode }) {
   return (
     <div className="flex items-center gap-4">
@@ -107,7 +87,6 @@ const NAV = [
 function Index() {
   const { msg, setMsg } = useNotice();
   notify = setMsg;
-  const time = useCountdown();
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -129,7 +108,7 @@ function Index() {
     <div className="pb-24 md:pb-0">
       {/* Oferta */}
       <div className="bg-wine px-4 py-2.5 text-center text-[11px] font-bold tracking-[0.14em] text-gold-soft">
-        OFERTA DE LANÇAMENTO | VAGAS LIMITADAS
+MENTORIA INDIVIDUAL • 5 ENCONTROS
       </div>
 
       {/* Nav */}
@@ -225,7 +204,7 @@ function Index() {
           {[
             ["ENTENDER", "Análise do seu temperamento e identificação dos seus padrões."],
             ["DESBLOQUEAR", "Nos encontros, vamos olhar para os comportamentos que estão te mantendo parada."],
-            ["AGIR", "Você coloca em prática através do protocolo Expertus."],
+            ["AGIR", "Você transforma os insights dos encontros em decisões e ações práticas."],
             ["SUSTENTAR", "15 dias de suporte para não voltar automaticamente ao padrão anterior."],
           ].map(([t, d], i) => (
             <div key={t} className="bg-background p-8">
@@ -255,8 +234,8 @@ function Index() {
         <Eyebrow>O MÉTODO</Eyebrow>
         <h2 className="mt-6 font-display text-4xl leading-tight md:text-6xl">UM PROTOCOLO PARA QUEM DECIDIU <span className="italic text-gold">PARAR DE REPETIR</span> OS MESMOS PADRÕES</h2>
         <p className="mt-8 max-w-3xl leading-[1.8] text-ivory/80">Um protocolo desenvolvido para aquela mulher que deseja parar de repetir os padrões que a mantêm travada, transformando-a em uma mulher capaz de sustentar a vida que decidiu construir. Você se torna a dona do seu futuro através de um método.</p>
-        <h3 className="mt-12 text-3xl text-gold">VOCÊ VAI APLICAR UM MÉTODO VALIDADO!</h3>
-        <p className="mt-4 max-w-3xl leading-[1.8] text-ivory/80">Você não vai sair daqui apenas com insights. Vai executar um protocolo de tarefas para tirar da cabeça o que foi trabalhado nos encontros e levar para a sua rotina.</p>
+        <h3 className="mt-12 text-3xl text-gold">UM PROCESSO PARA SAIR DA INTENÇÃO E IR PARA A AÇÃO</h3>
+        <p className="mt-4 max-w-3xl leading-[1.8] text-ivory/80">Você não vai sair daqui apenas com insights. A proposta é transformar o que for trabalhado nos encontros em decisões e passos possíveis de aplicar na sua rotina.</p>
         <div className="mt-12 grid grid-cols-2 gap-6 md:grid-cols-4">
           {["CONSCIÊNCIA", "DECISÃO", "AÇÃO", "ACOMPANHAMENTO"].map((t, i) => (
             <div key={t} className="border-t border-gold/60 pt-5">
@@ -271,7 +250,7 @@ function Index() {
       {/* Por que funciona */}
       <Section className="bg-wine-deep/40">
         <Eyebrow>POR QUE VAI FUNCIONAR COM VOCÊ</Eyebrow>
-        <h2 className="mt-6 font-display text-4xl leading-tight md:text-6xl">SABE COMO EU SEI QUE ESSE MÉTODO VAI <span className="italic text-gold">FUNCIONAR COM VOCÊ?</span></h2>
+        <h2 className="mt-6 font-display text-4xl leading-tight md:text-6xl">POR QUE ESSE PROCESSO PODE FAZER SENTIDO PARA VOCÊ?</h2>
         <div className="mt-10 max-w-3xl space-y-5 leading-[1.9] text-ivory/85">
           <p>Porque eu não criei a Dona do Jogo quando tudo estava no cenário perfeito. Eu criei porque também precisei aprender a me enxergar.</p>
           <p>Por muito tempo, acumulei conhecimento, comecei coisas, parei, tentei novamente e procurei respostas fora de mim, até perceber que não adiantava conhecer mais uma estratégia se eu continuava repetindo os mesmos padrões.</p>
@@ -297,17 +276,14 @@ function Index() {
           <div className="border border-wine p-8">
             <h3 className="text-3xl text-ivory/70">NÃO É PARA VOCÊ</h3>
             <ul className="mt-6 space-y-4 text-sm leading-relaxed text-muted-foreground">
-              {["Mulheres que preferem continuar na escassez e sem evolução.", "Mulheres que preferem ficar só olhando as outras fazerem e terem resultados.", "Mulheres que estão procurando alguém para fazer por elas.", "Mulheres que querem continuar deixando tudo para depois.", "Mulheres que querem uma fórmula mágica.", "Mulheres que não estão dispostas a olhar para os próprios comportamentos.", "Mulheres que querem continuar acumulando conhecimento sem colocá-lo em prática."].map((t) => (
+              {["Quem procura uma solução instantânea, sem participação no processo.", "Quem espera que outra pessoa tome as decisões ou faça as mudanças em seu lugar.", "Quem busca uma promessa de resultado igual para todas.", "Quem não está neste momento disponível para refletir sobre os próprios comportamentos e experimentar novas ações."].map((t) => (
                 <li key={t} className="flex gap-3"><X className="mt-0.5 h-4 w-4 shrink-0 text-wine" />{t}</li>
               ))}
             </ul>
           </div>
         </div>
         <div className="mt-12 max-w-3xl space-y-4 leading-[1.8] text-ivory/80">
-          <p className="font-display text-2xl italic text-gold-soft">Se você ainda não tem coragem de conhecer a sua melhor versão, esta mentoria não é para você.</p>
           <p>A Dona do Jogo não promete transformar sua vida em cinco encontros. Ela te ajuda a parar de repetir os mesmos padrões que estão mantendo sua vida no mesmo lugar.</p>
-          <p>O passo a passo que desenvolvi neste protocolo me fez perder o medo de me posicionar para o mundo, abrir meu próprio negócio, melhorar minha relação com minha família e me encontrar espiritualmente.</p>
-          <p>Se você não está disposta a abrir mão de uma vida mediana, é melhor pararmos por aqui.</p>
         </div>
       </Section>
 
@@ -339,7 +315,7 @@ function Index() {
           {[
             ["O COMPORTAMENTO FINANCEIRO DE CADA TEMPERAMENTO", "Entenda como o seu temperamento influencia a sua relação com o dinheiro."],
             ["DESTRAVE SUA PRODUTIVIDADE", "Para sair do ciclo de começar e parar e colocar a sua rotina em movimento."],
-            ["A JORNADA DA MULHER PROTAGONISTA", "Um caminho para construir, com consciência, a vida que você decidiu viver."],
+            ["A JORNADA DA MULHER PRÓSPERA", "Um caminho para construir, com consciência, a vida que você decidiu viver."],
           ].map(([t, d], i) => (
             <div key={t} className="border border-gold/20 bg-card/60 p-7">
               <div className="relative aspect-[6/5] overflow-hidden border border-gold/60 bg-background p-6">
@@ -360,9 +336,6 @@ function Index() {
             </div>
           ))}
         </div>
-        <p className="mt-14 border border-gold/40 p-5 text-center text-sm text-gold-soft">
-          <strong>EXTRAS DE LANÇAMENTO:</strong> Protocolo Expertus + Ebook Destravando a Mente Próspera
-        </p>
       </Section>
 
       {/* Oferta */}
@@ -372,13 +345,11 @@ function Index() {
           <h2 className="mt-4 font-display text-4xl md:text-5xl">ENTRE PARA A MENTORIA <span className="block italic text-gold">A DONA DO JOGO</span></h2>
           <p className="mt-8 font-display text-7xl text-ivory md:text-8xl">R$ 697</p>
           <p className="text-sm text-muted-foreground">à vista</p>
-          <p className="mt-6 text-xs tracking-[0.15em] text-gold">SEU ACESSO A ESTA CONDIÇÃO TERMINA EM: <span className="tabular-nums">{time}</span></p>
           <ul className="mx-auto mt-8 grid max-w-md gap-3 text-left text-sm sm:grid-cols-2">
             {["Análise de Temperamento", "5 encontros ao vivo", "Material personalizado", "15 dias de suporte", "3 bônus"].map((t) => (
               <li key={t} className="flex gap-2"><Check className="h-4 w-4 text-gold" />{t}</li>
             ))}
           </ul>
-          <p className="mt-4 text-xs italic tracking-wide text-gold-soft">+ Extras exclusivos da oferta de lançamento</p>
           <p className="mt-8 text-sm italic text-ivory/75">Você não está comprando mais conteúdo. Está escolhendo olhar para aquilo que vem te impedindo de avançar.</p>
           <BuyButton className="mt-8 w-full">SIM, QUERO TER ACESSO AGORA</BuyButton>
           <div className="flex justify-center"><Trust /></div>
@@ -448,7 +419,7 @@ function Index() {
         <h2 className="mx-auto mt-6 max-w-4xl font-display text-4xl leading-tight md:text-6xl"><span className="block">A VIDA É HOJE.</span><span className="mt-2 block">DAQUI A UM ANO, VOCÊ VAI ESTAR NO MESMO LUGAR OU NA VIDA QUE VOCÊ DECIDIU <span className="italic text-gold">CONSTRUIR?</span></span></h2>
         <p className="mt-6 text-ivory/75">A decisão que você adia hoje é a vida que você não vive amanhã.</p>
         <BuyButton className="mt-10" />
-        <p className="mt-4 text-xs text-muted-foreground">O valor de lançamento e os bônus são por tempo limitado.</p>
+
       </Section>
 
       {/* Footer */}
