@@ -2,14 +2,14 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState, type ReactNode } from "react";
 import { ArrowRight, Check, ChevronDown, Crown, Lock, Menu, X } from "lucide-react";
 import heroDama from "@/assets/hero-dama.jpg";
-import emilleAsset from "@/assets/emille.png.asset.json";
+import emilleAsset from "@/assets/emille-nova.jpg.asset.json";
 import { SITE, trackCheckout } from "@/lib/site-config";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Dona do Jogo — Mentoria Individual com Êmille Matos" },
-      { name: "description", content: "Pare de se sabotar. Em 5 encontros individuais, entenda seu padrão, desbloqueie o que te paralisa e saia com um protocolo de ação. R$197." },
+      { name: "description", content: "Pare de se sabotar. Em 5 encontros individuais, entenda seu padrão, desbloqueie o que te paralisa e saia com um protocolo de ação. R$697." },
       { property: "og:title", content: "Dona do Jogo — Mentoria Individual com Êmille Matos" },
       { property: "og:description", content: "Pare de se sabotar. Assuma o jogo da sua vida. Mentoria individual em 5 encontros." },
       { property: "og:type", content: "website" },
@@ -40,7 +40,7 @@ function go(url: string, label: string, isCheckout = false) {
   window.open(url, "_blank", "noopener");
 }
 
-function BuyButton({ children = "QUERO SER DONA DO JOGO POR R$197", className = "" }: { children?: ReactNode; className?: string }) {
+function BuyButton({ children = "QUERO SER DONA DO JOGO POR R$697", className = "" }: { children?: ReactNode; className?: string }) {
   return (
     <button
       onClick={() => go(SITE.checkoutUrl, "O link de compra", true)}
@@ -370,8 +370,7 @@ function Index() {
         <div className="mx-auto max-w-2xl border border-gold/60 bg-background/70 p-8 text-center md:p-14">
           <p className="eyebrow">OFERTA DE LANÇAMENTO</p>
           <h2 className="mt-4 font-display text-4xl md:text-5xl">ENTRE PARA A MENTORIA <span className="block italic text-gold">A DONA DO JOGO</span></h2>
-          <p className="mt-8 text-lg text-muted-foreground">De <s className="text-muted-foreground/80">R$ 497</s> por</p>
-          <p className="mt-2 font-display text-7xl text-ivory md:text-8xl">R$ 197</p>
+          <p className="mt-8 font-display text-7xl text-ivory md:text-8xl">R$ 697</p>
           <p className="text-sm text-muted-foreground">à vista</p>
           <p className="mt-6 text-xs tracking-[0.15em] text-gold">SEU ACESSO A ESTA CONDIÇÃO TERMINA EM: <span className="tabular-nums">{time}</span></p>
           <ul className="mx-auto mt-8 grid max-w-md gap-3 text-left text-sm sm:grid-cols-2">
