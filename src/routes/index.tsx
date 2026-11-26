@@ -310,7 +310,7 @@ MENTORIA INDIVIDUAL • 5 ENCONTROS
       {/* Bônus */}
       <Section>
         <Eyebrow>BÔNUS </Eyebrow>
-        <h2 className="mt-6 font-display text-4xl md:text-6xl">E LEVA <span className="italic text-gold">3 BÔNUS </span> LIBERADOS NA HORA</h2>
+        <h2 className="mt-6 font-display text-4xl md:text-6xl">E LEVA <span className="italic text-gold">BÔNUS IMPERDÍVEIS</span></h2>
         <div className="mt-12 grid gap-5 md:grid-cols-3">
           {[
             ["O COMPORTAMENTO FINANCEIRO DE CADA TEMPERAMENTO", "Entenda como o seu temperamento influencia a sua relação com o dinheiro."],
@@ -346,7 +346,7 @@ MENTORIA INDIVIDUAL • 5 ENCONTROS
           <p className="mt-8 font-display text-7xl text-ivory md:text-8xl">R$ 697</p>
           <p className="text-sm text-muted-foreground">à vista</p>
           <ul className="mx-auto mt-8 grid max-w-md gap-3 text-left text-sm sm:grid-cols-2">
-            {["Análise de Temperamento", "5 encontros ao vivo", "Material personalizado", "15 dias de suporte", "3 bônus"].map((t) => (
+            {["Análise de Temperamento", "5 encontros ao vivo", "Material personalizado", "15 dias de suporte", "Bônus imperdíveis"].map((t) => (
               <li key={t} className="flex gap-2"><Check className="h-4 w-4 text-gold" />{t}</li>
             ))}
           </ul>
