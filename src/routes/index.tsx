@@ -445,7 +445,7 @@ function Index() {
       {/* CTA final */}
       <Section className="text-center">
         <Crown className="mx-auto h-10 w-10 text-gold" strokeWidth={1.2} />
-        <h2 className="mx-auto mt-6 max-w-4xl font-display text-4xl leading-tight md:text-6xl">A VIDA É HOJE. DAQUI A UM ANO VOCÊ VAI ESTAR NO MESMO LUGAR OU NA VIDA QUE VOCÊ DECIDIU <span className="italic text-gold">CONSTRUIR.</span></h2>
+        <h2 className="mx-auto mt-6 max-w-4xl font-display text-4xl leading-tight md:text-6xl"><span className="block">A VIDA É HOJE.</span><span className="mt-2 block">DAQUI A UM ANO, VOCÊ VAI ESTAR NO MESMO LUGAR OU NA VIDA QUE VOCÊ DECIDIU <span className="italic text-gold">CONSTRUIR?</span></span></h2>
         <p className="mt-6 text-ivory/75">A decisão que você adia hoje é a vida que você não vive amanhã.</p>
         <BuyButton className="mt-10" />
         <p className="mt-4 text-xs text-muted-foreground">O valor de lançamento e os bônus são por tempo limitado.</p>
